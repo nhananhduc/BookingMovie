@@ -1,0 +1,81 @@
+.trapezoid {
+  position: relative;
+  border-top: 80px solid rgba(255, 255, 255, 0.9);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 130px;
+  filter: contrast(100%) drop-shadow(0px 20px 20px #ffffff);
+  -webkit-filter: contrast(100%) drop-shadow(0px 20px 20px #fff);
+  -moz-filter: contrast(100%) drop-shadow(0px 20px 20px #fff);
+}
+
+.screen{
+position: absolute;
+top: -100%;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.ghe {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 3px;
+  background-color: white;
+  color: black;
+}
+
+.gheDaDat {
+  background-color: rgba(123, 122, 122);
+  cursor: no-drop;
+}
+
+.gheDangDat {
+  background-color: rgb(18, 176, 18) !important;
+}
+
+.gheVip {
+  background-color: rgb(228, 74, 8);
+}
+
+.gheDaDuocDat {
+  background-color: #4285F4;
+  border: 2px solid orange;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(255,165,0,0.5); 
+box-shadow: 0px 0px 10px 5px rgba(255,165,0,0.5);
+  color: black;
+}
+
+.gheKhachDat{
+  background-color: rgb(242,25,191) !important ;
+  cursor: no-drop;
+}
+
+.ticket {
+  position: relative;
+  box-sizing: border-box;
+  margin: 50px auto 0;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #CB33CE 0%, #C57432 100%);
+  box-shadow: 2px 2px 15px 0px #ab9b0d;
+}
+
+.ticket:before, .ticket:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  height: 6px;
+  /* width: 1180px; */
+}
+.ticket:before {
+  top: -5px;
+  background: radial-gradient(circle, transparent, transparent 50%, #fbfbfb 50%, #fbfbfb 100%) -7px -8px / 16px 16px repeat-x;
+}
+.ticket:after {
+  bottom: -5px;
+  background: radial-gradient(circle, transparent, transparent 50%, #fbfbfb 50%, #fbfbfb 100%) -7px -2px / 16px 16px repeat-x;
+}
+

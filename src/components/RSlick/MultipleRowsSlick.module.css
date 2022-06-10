@@ -1,0 +1,28 @@
+.slick-prev {
+  left: -3px !important;
+  z-index: 1;
+  opacity: 70%;
+}
+
+.slick-next {
+  right: 24px !important;
+  z-index: 1;
+  opacity: 70%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 !important;
+  font-size: 3rem !important;
+}
+
+.width-item {
+  width: 100% !important;
+}
+.active_Film {
+  @apply  bg-gradient-to-r from-pink-500 to-yellow-500 text-white;
+}
+
+.non_active_Film {
+  @apply border border-indigo-300/50;
+}
