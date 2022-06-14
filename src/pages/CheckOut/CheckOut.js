@@ -90,7 +90,6 @@ function ChonGhe(props) {
             {renderSeats()}
           </div>
         </div>
-        {/* <div></div> */}
         <div className='col-span-full lg:col-span-2 flex items-center'>
           <div className='grid grid-cols-6'>
             <div className='col-span-3 col-start-1 sm:col-start-2 lg:col-start-1 mt-10 flex lg:flex-col'>
