@@ -71,7 +71,7 @@ function ChonGhe(props) {
         <button onClick={() => {
           dispatch(datGheAction(ghe, props.match.params.id))
         }} disabled={ghe.daDat || classGheKhachDat !== ''}
-          className={`text-xs ghe ${classGheVip} ${classGheDaDat} ${classGheDangDat} ${classGheDaDuocDat} ${classGheKhachDat}`} >
+          className={`text-ss md:text-xs w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-6 md:h-6 2xl:w-8 2xl:h-8 ghe ${classGheVip} ${classGheDaDat} ${classGheDangDat} ${classGheDaDuocDat} ${classGheKhachDat}`} >
           {ghe.daDat ? classGheDaDuocDat !== '' ? ghe.stt : ghe.stt : ghe.stt}
         </button>
         {(index + 1) % 16 === 0 ? <br /> : ''}
@@ -83,51 +83,50 @@ function ChonGhe(props) {
     <div className='mt-5'>
       <div className='grid grid-cols-12'>
         <div className='col-span-full lg:col-span-10 flex flex-col justify-center items-center mt-5'>
-          <div className='trapezoid w-full sm:w-4/5 md:w-2/3 lg:w-3/5 xl:w-1/2 2xl:w-2/5'>
+          <div className='trapezoid w-full xl:w-2/3'>
             <h3 className='text-gray-600 text-2xl text-center screen'>S C R E E N</h3>
           </div>
           <div className='text-white mt-10'>
             {renderSeats()}
           </div>
         </div>
+
         <div className='col-span-full lg:col-span-2 flex items-center'>
           <div className='grid grid-cols-6'>
-            <div className='col-span-3 col-start-1 sm:col-start-2 lg:col-start-1 mt-10 flex lg:flex-col'>
-              <div className='flex justify-start items-center mb-3'>
+            <div className='col-span-full mt-10 grid grid-cols-6 lg:grid-cols-1'>
+              <div className='flex col-span-2 md:col-span-1 justify-start lg:justify-start md:justify-center items-center mb-3'>
                 <div>
-                  <button className='ghe text-center'></button>
+                  <button className='ghe_chuthich text-center'></button>
                 </div>
                 <p className='mb-0 text-xs lg:text-sm'>Standard</p>
               </div>
-              <div className='flex justify-start items-center mb-3'>
+              <div className='flex col-span-2 md:col-span-1 justify-start lg:justify-start md:justify-center items-center mb-3'>
                 <div>
-                  <button className='ghe gheDangDat text-center'></button>
+                  <button className='ghe_chuthich gheDangDat text-center'></button>
                 </div>
                 <p className='mb-0 text-xs lg:text-sm'>Checked</p>
               </div>
-              <div className='flex justify-start items-center mb-3'>
+              <div className='flex col-span-2 md:col-span-1 justify-start lg:justify-start md:justify-center items-center mb-3'>
                 <div>
-                  <button className='ghe gheDaDat'></button>
+                  <button className='ghe_chuthich gheDaDat'></button>
                 </div>
                 <p className='mb-0 text-xs lg:text-sm'>Occupied</p>
               </div>
-
-              <div className='flex justify-start items-center mb-3'>
+              <div className='flex col-span-2 md:col-span-1 justify-start lg:justify-start md:justify-center items-center mb-3'>
                 <div>
-                  <button className='ghe gheVip'></button>
+                  <button className='ghe_chuthich gheVip'></button>
                 </div>
                 <p className='mb-0 text-xs lg:text-sm'>VIP</p>
               </div>
-
-              <div className='flex justify-start items-center mb-3'>
+              <div className='flex col-span-2 md:col-span-1 justify-start lg:justify-start md:justify-center items-center mb-3'>
                 <div>
-                  <button className='ghe gheDaDuocDat'></button>
+                  <button className='ghe_chuthich gheDaDuocDat'></button>
                 </div>
                 <p className='mb-0 text-xs lg:text-sm'>Your booked</p>
               </div>
-              <div className='flex justify-start items-center mb-3'>
+              <div className='flex col-span-2 md:col-span-1 justify-start lg:justify-start md:justify-center items-center mb-3'>
                 <div>
-                  <button className='ghe gheKhachDat'></button>
+                  <button className='ghe_chuthich gheKhachDat'></button>
                 </div>
                 <p className='mb-0 text-xs lg:text-sm'>Occupied (real time)</p>
               </div>
@@ -150,11 +149,11 @@ function ChonGhe(props) {
               })}
             </div>
           </div>
-          <div className='text-base col-span-2 md:col-span-1 xl:text-lg pl-2 mt-5'>
+          <div className='text-base col-span-3 sm:col-span-2 md:col-span-1 xl:text-lg lg:pl-5 mt-5'>
             <p className='mb-0'>Theater </p>
             <p className='mb-0'>Showtimes </p>
           </div>
-          <div className='col-span-8 sm:col-span-6 md:col-span-4 lg:col-span-3 text-base xl:text-lg font-semibold ml-3 mt-5'>
+          <div className='col-span-7 md:col-span-4 lg:col-span-3 text-base xl:text-lg font-semibold ml-3 mt-5'>
             <p className='mb-0'>{thongTinPhim?.tenRap} - {thongTinPhim?.tenCumRap}</p>
             <p className='mb-0'>{thongTinPhim?.gioChieu} - {thongTinPhim?.ngayChieu} </p>
           </div>
@@ -176,7 +175,7 @@ function ChonGhe(props) {
               <p className='mb-0 mt-1'>BOOKING</p>
             </button>
           </div>
-          <div className='flex justify-center col-span-2 lg:col-span-1'>
+          <div className='flex justify-center col-span-3 md:col-span-2 lg:col-span-1'>
             <button className='w-20 h-20 xl:w-24 xl:h-24 flex-col justify-center items-center mt-3 cursor-pointer px-1 py-1 bg-gray-600 text-center  text-white font-semibold text-sm xl:text-lg leading-tight uppercase shadow-md hover:bg-gray-700 hover:shadow-lg focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg rounded-2xl border-2 border-white transition duration-150 ease-in-out' onClick={() => {
               history.goBack()
             }}>

@@ -9,20 +9,31 @@
   -moz-filter: contrast(100%) drop-shadow(0px 20px 20px #fff);
 }
 
-.screen{
-position: absolute;
-top: -100%;
-left: 50%;
-transform: translateX(-50%);
+.screen {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.ghe {
+.ghe_chuthich {
   width: 20px;
   height: 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin: 3px;
+  background-color: white;
+  color: black;
+}
+
+.ghe {
+  /* width: 20px;
+  height: 20px; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2px;
   background-color: white;
   color: black;
 }
@@ -41,15 +52,15 @@ transform: translateX(-50%);
 }
 
 .gheDaDuocDat {
-  background-color: #4285F4;
+  background-color: #4285f4;
   border: 2px solid orange;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(255,165,0,0.5); 
-box-shadow: 0px 0px 10px 5px rgba(255,165,0,0.5);
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 165, 0, 0.5);
+  box-shadow: 0px 0px 10px 5px rgba(255, 165, 0, 0.5);
   color: black;
 }
 
-.gheKhachDat{
-  background-color: rgb(242,25,191) !important ;
+.gheKhachDat {
+  background-color: rgb(242, 25, 191) !important ;
   cursor: no-drop;
 }
 
@@ -59,12 +70,13 @@ box-shadow: 0px 0px 10px 5px rgba(255,165,0,0.5);
   margin: 50px auto 0;
   padding: 20px;
   border-radius: 10px;
-  background: linear-gradient(45deg, #CB33CE 0%, #C57432 100%);
+  background: linear-gradient(45deg, #cb33ce 0%, #c57432 100%);
   box-shadow: 2px 2px 15px 0px #ab9b0d;
 }
 
-.ticket:before, .ticket:after {
-  content: '';
+.ticket:before,
+.ticket:after {
+  content: "";
   position: absolute;
   left: 5px;
   height: 6px;
@@ -72,10 +84,21 @@ box-shadow: 0px 0px 10px 5px rgba(255,165,0,0.5);
 }
 .ticket:before {
   top: -5px;
-  background: radial-gradient(circle, transparent, transparent 50%, #fbfbfb 50%, #fbfbfb 100%) -7px -8px / 16px 16px repeat-x;
+  background: radial-gradient(
+      circle,
+      transparent,
+      transparent 50%,
+      #fbfbfb 50%,
+      #fbfbfb 100%
+    ) -7px -8px / 16px 16px repeat-x;
 }
 .ticket:after {
   bottom: -5px;
-  background: radial-gradient(circle, transparent, transparent 50%, #fbfbfb 50%, #fbfbfb 100%) -7px -2px / 16px 16px repeat-x;
+  background: radial-gradient(
+      circle,
+      transparent,
+      transparent 50%,
+      #fbfbfb 50%,
+      #fbfbfb 100%
+    ) -7px -2px / 16px 16px repeat-x;
 }
-
